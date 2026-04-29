@@ -1,0 +1,12 @@
+{
+  "name": "ai-engineering-company-project",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static starter for the AI Engineering Company Project",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
