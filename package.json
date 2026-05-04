@@ -1,14 +1,20 @@
 {
-  "name": "ai-engineering-company-project",
+  "name": "sp-aie-theazec34-project",
   "version": "0.1.0",
   "private": true,
-  "description": "Static starter for the AI Engineering Company Project",
+  "description": "Proyecto compañía AI Engineering — Brasaland (Hito 2)",
   "scripts": {
-    "start": "node server.js",
     "typecheck": "tsc --noEmit",
-    "test": "npx ts-node src/demo.ts"
+    "build": "tsc",
+    "demo": "npm run build && node dist/demo.js",
+    "build:web": "esbuild src/demo-browser.ts --bundle --outfile=dist-web/app.js --format=esm --platform=browser",
+    "serve": "npx --yes http-server . -p 3000 -a 0.0.0.0"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0"
   }
 }
