@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --brasa: #c8380a;
+  --brasa-dark: #8b2200;
+  --brasa-light: #e85a20;
+  --dorado: #d4943a;
+  --dorado-light: #f0c060;
+  --madera: #5c3317;
+  --crema: #fdf6ec;
+  --crema-dark: #f5e8d0;
+  --carbon: #1a1008;
+  --humo: #2e1f0f;
+}
+
+@theme inline {
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+body {
+  color: var(--carbon);
+}
