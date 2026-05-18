@@ -1,14 +1,15 @@
 {
   "name": "sp-aie-theazec34-project",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "private": true,
-  "description": "Proyecto compañía AI Engineering — Brasaland (Hito 2)",
+  "description": "Brasaland — fusión Hito 1 (web) + Hito 2 (TypeScript) + Hito 3 (Talent Tracker) — rama 3.5",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "demo": "npm run build && node dist/demo.js",
-    "build:web": "esbuild src/demo-browser.ts --bundle --outfile=dist-web/app.js --format=esm --platform=browser",
-    "serve": "npx --yes http-server . -p 3000 -a 0.0.0.0"
+    "serve:web": "npx --yes http-server . -p 8080 -o portal.html -a 127.0.0.1",
+    "dev:tracker": "npm run dev --prefix apps/talent-pipeline-tracker -- -p 3001",
+    "portal": "npm run serve:web"
   },
   "engines": {
     "node": ">=18"

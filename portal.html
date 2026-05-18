@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasaland Digital — Fusión Hito 1 + 2 + 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brasa: #c8380a;
+      --brasa-dark: #8b2200;
+      --crema: #fdf6ec;
+      --carbon: #1a1008;
+      --dorado: #f0c060;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--crema);
+      color: var(--carbon);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .sub { color: #5c3317; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5; }
+    .fusion {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .fusion span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      background: white;
+      border: 1px solid rgba(200, 56, 10, 0.2);
+      color: var(--brasa-dark);
+    }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    li a {
+      display: block;
+      padding: 1.25rem 1.5rem;
+      background: white;
+      border: 1px solid rgba(200, 56, 10, 0.15);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--carbon);
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    li a:hover {
+      border-color: var(--brasa);
+      box-shadow: 0 4px 20px rgba(200, 56, 10, 0.12);
+    }
+    li a strong { display: block; font-size: 1.05rem; margin-bottom: 0.35rem; color: var(--brasa-dark); }
+    li a span { font-size: 0.875rem; color: #5c3317; line-height: 1.45; }
+    .note {
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      background: #fff8f0;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      border-left: 4px solid var(--dorado);
+    }
+    code { background: #f5e8d0; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Brasaland Digital</h1>
+    <p class="sub">
+      Rama <strong>3.5</strong> — fusión de los tres hitos del proyecto transversal.
+      Las ramas <code>main</code>, <code>hito-2</code> y <code>hito-3</code> no se modifican.
+    </p>
+
+    <div class="fusion" aria-label="Hitos incluidos">
+      <span>Hito 1 · Web</span>
+      <span>Hito 2 · TypeScript</span>
+      <span>Hito 3 · Talent Tracker</span>
+    </div>
+
+    <ul>
+      <li>
+        <a href="index.html">
+          <strong>Hito 1 — Web corporativa</strong>
+          <span><code>index.html</code> · Landing Brasaland, SEO, carta (<code>menu.json</code>).</span>
+        </a>
+      </li>
+      <li>
+        <a href="application.html">
+          <strong>Hito 1 — Bolsa de empleo</strong>
+          <span><code>application.html</code> · Formulario público de candidatura.</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost:3001" target="_blank" rel="noopener noreferrer">
+          <strong>Hito 3 — Talent Pipeline Tracker</strong>
+          <span><code>apps/talent-pipeline-tracker</code> · App Next.js (People &amp; Talent).</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="note">
+      <p><strong>Hito 2 — Programación:</strong> en la raíz del repo, <code>npm run demo</code> (consola).</p>
+      <p style="margin-top: 0.5rem">Contexto: <code>Brasaland.md</code> (Hito 2) · <code>03-talent-pipeline-tracker/CONTEXT-brasaland.md</code> (Hito 3).</p>
+      <p style="margin-top: 0.75rem"><strong>Arrancar todo:</strong> <code>npm run portal</code> + <code>npm run dev:tracker</code></p>
+    </div>
+  </div>
+</body>
+</html>
